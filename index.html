@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Instituto Educativo José María Morelos | Excelencia Académica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER MODIFICADO: Logo pequeño + texto separado ===== -->
+<header class="main-header" id="mainHeader">
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <!-- Imagen del logo AHORA ES SOLO EL ICONO (pequeño) -->
+            <img src="assets/logo(escuela).png" alt="Logo Instituto José María Morelos" class="logo-img">
+            <!-- Texto separado en HTML, no dentro de la imagen -->
+            <div class="logo-text">
+                <span class="logo-name">Universidad</span>
+                <span class="logo-name bold">José María Morelos</span>
+                <span class="logo-tagline">Juntos construyendo tu futuro</span>
+            </div>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#licenciaturas">Licenciaturas</a></li>
+                <li><a href="#maestrias">Maestrías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/525549691517?text=Hola%2C%20deseo%20información%20sobre%20sus%20programas." class="cta-header" target="_blank">
+            <i class="fab fa-whatsapp"></i> Solicitar informes
+        </a>
+        <button class="burger" id="burger" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#licenciaturas">Licenciaturas</a></li>
+            <li><a href="#maestrias">Maestrías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/525549691517" class="cta-mobile" target="_blank">
+            <i class="fab fa-whatsapp"></i> Solicitar informes
+        </a>
+    </div>
+</header>
+
+<!-- El resto del contenido permanece IGUAL -->
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero-bg">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-grain"></div>
+    </div>
+    <div class="container hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fas fa-certificate"></i>
+                <span>Estudios con reconocimiento y validez oficial SEP</span>
+            </div>
+            <h1 class="hero-title">
+                Juntos <br>
+                <em>construyendo</em> <br>
+                tu futuro
+            </h1>
+            <p class="hero-sub">Más de 20 años construyendo futuro a través de la excelencia académica en el Estado de México.</p>
+            <div class="hero-actions">
+                <a href="#licenciaturas" class="btn btn-primary">Ver programas</a>
+                <a href="#contacto" class="btn btn-outline">Consulta tu beca <i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong>+20</strong>
+                    <span>Años de experiencia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>11</strong>
+                    <span>Programas académicos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>SEP</strong>
+                    <span>Validez oficial</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-carousel-wrap">
+                <div class="slidevideo-wrap" id="slideVideoWrap">
+                    <canvas id="slideCanvas"></canvas>
+                </div>
+                <div class="hero-img-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Plan de<br><strong>Beca</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Explora</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- ===== LICENCIATURAS ===== -->
+<section id="licenciaturas" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Oferta académica</span>
+            <br>
+            <h2 class="section-title">Licenciaturas</h2>
+            <p class="section-desc">Programas diseñados para formar profesionales competitivos en un mundo en constante transformación.</p>
+        </div>
+        <div class="programs-list" id="licenciaturasGrid"></div>
+    </div>
+</section>
+
+<!-- ===== MAESTRÍAS ===== -->
+<section id="maestrias" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Posgrado</span>
+            <br>
+            <h2 class="section-title">Maestrías</h2>
+            <p class="section-desc">Especialización de alto nivel para profesionales que buscan liderar en su campo.</p>
+        </div>
+        <div class="programs-list" id="maestriasGrid"></div>
+    </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="section contact-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">¿Listo para comenzar?</span>
+            <br>
+            <h2 class="section-title">Contáctanos</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-card-header">
+    <div class="contact-logo-mini">
+        <img src="assets/logo(escuela).png" alt="Logo Instituto" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+    </div>
+    <div>
+        <h3>Universidad<br>José María Morelos</h3>
+        <p class="contact-cct"><i class="fas fa-certificate"></i> C.C.T. 15PES1443Y · Reconocimiento SEP</p>
+    </div>
+</div>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <strong>Dirección</strong>
+                            <span>Av. Otoño #189 Mz. 359 Lt2, Col. Las Brisas, Acolman, Estado de México</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <span>55 4969 1517</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Correo</strong>
+                            <span>contacto@morelos.edu.mx</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://wa.me/525549691517?text=Hola%2C%20deseo%20información%20sobre%20sus%20programas." class="btn-social wsp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.0987654321!2d-98.920987!3d19.638123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e6b0b0b0b0b%3A0x123456789abcdef!2sAv%20Oto%C3%B1o%20189%2C%20Las%20Brisas%2C%20Acolman%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1678900000000!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <img src="assets/logo(escuela).png" alt="Logo Instituto" style="width: 150px; height: 150px; object-fit: contain; border-radius: 12px;">
+            <div>
+                <p class="footer-name">Universidad José María Morelos</p>
+                <p class="footer-sep"><i class="fas fa-certificate"></i> Validez Oficial SEP · C.C.T. 15PES1443Y</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>Programas</h4>
+                <a href="#licenciaturas">Licenciaturas</a>
+                <a href="#maestrias">Maestrías</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="tel:5549691517"><i class="fas fa-phone"></i> 55 4969 1517</a>
+                <a href="mailto:contacto@morelos.edu.mx"><i class="fas fa-envelope"></i> contacto@morelos.edu.mx</a>
+                <p><i class="fas fa-map-marker-alt"></i> Acolman, Estado de México</p>
+            </div>
+            <div class="footer-col">
+                <h4>Redes sociales</h4>
+                <div class="footer-social">
+                    <a href="https://wa.me/525549691517" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2025 Instituto Educativo José María Morelos · Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+        <div class="modal-icon" id="modalIcon"></div>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-actions">
+            <a href="https://wa.me/525549691517?text=Hola%2C%20deseo%20información%20sobre%20la%20" id="modalWsp" class="btn btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar informes
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
