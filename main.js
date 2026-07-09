@@ -55,11 +55,11 @@ function renderPrograms(containerId, data) {
 
 // ===== SLIDE VIDEO (Canvas Ken Burns) =====
 const slideImages = [
-    { src: "assets/plantel.jpg" },
-    { src: "assets/pedagogia.jpg" },
-    { src: "assets/sistemas.jpg" },
-    { src: "assets/navidad.jpg" },
-    { src: "assets/ajolote.jpeg" }
+    { src: "plantel.jpg" },
+    { src: "pedagogia.jpg" },
+    { src: "sistemas.jpg" },
+    { src: "navidad.jpg" },
+    { src: "ajolote.jpeg" }
 ];
 
 function setupCarousel() {
